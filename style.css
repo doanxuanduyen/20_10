@@ -297,12 +297,24 @@ body {
   height: 1vmin;
   background-color: rgb(255, 251, 0);
   border-radius: 50%;
-  filter: blur(0.2vmin);
+  /* filter: blur(0.2vmin); */
   animation: light-ans 4s linear infinite backwards;
+}
+
+.flower__light i {
+  background: linear-gradient(to top, #e5f554af, #e5fd0e96);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .flower__light:nth-child(odd) {
   background-color: #23f0ff;
+}
+
+.flower__light:nth-child(odd) i {
+  background: linear-gradient(to top, #6ef5e3af, #4affdb96);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .flower__light--1 {
@@ -1203,5 +1215,3 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
-
-/*# sourceMappingURL=style.css.map */
